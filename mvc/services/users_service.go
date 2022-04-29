@@ -5,6 +5,16 @@ import (
 	"mvc/utils"
 )
 
-func GetUser(userId int64) (*domain.User, *utils.AppError) {
-	return domain.GetUser(userId)
+type usersService struct{}
+
+var (
+	UsersService usersService
+)
+
+func (u *usersService) GetUser(userId int64) (*domain.User, *utils.AppError) {
+	user, err := domain.UserDao.GetUser(userId)
+	if err != nil {
+		return nil, err
+	}
+	return user, nil
 }
