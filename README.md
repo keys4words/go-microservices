@@ -3,3 +3,6 @@
 2. add benchmark test example to utils
 2. add mocking connecting to db via interface to service
 3. play with gin-gonic (add xml/json response)
+
+
+# src - play with github api
