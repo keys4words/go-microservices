@@ -6,3 +6,7 @@
 
 
 # src - play with github api
+
+# jwtService
+jwt_creator - generate jwt-token
+api - client for jwt creator
