@@ -10,3 +10,5 @@
 # jwtService
 jwt_creator - generate jwt-token
 api - client for jwt creator
+curl localhost:8000 - get token
+curl localhost:9000 --header 'Token: <insert-copyied-token>' - get secret information 

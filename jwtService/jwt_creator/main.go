@@ -7,9 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/dgrijalva/jwt-go"
 	jwt "github.com/dgrijalva/jwt-go"
-	"github.com/form3tech-oss/jwt-go"
 )
 
 var MySecretKey = []byte(os.Getenv("SECRET_KEY"))
